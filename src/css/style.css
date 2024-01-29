@@ -86,7 +86,8 @@ body {
     line-height: 1.6;
 }
 
-.btn-comprar {
+.btn-comprar,
+.btn-plataformas {
     background-color: rgba(255, 255, 255, .1);
     border: 0.5px solid #fff;
     border-radius: 4px;
@@ -99,26 +100,128 @@ body {
     transition: all .3s ease-in;
 }
 
-.btn-comprar:hover{
+.btn-plataformas {
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-comprar:hover {
     background-color: #fff;
     color: #000;
 }
 
-.compre-ja .capa-do-jogo{
-    width: 270px;  
+.compre-ja .capa-do-jogo {
+    width: 270px;
 }
 
-.compre-ja{
+.compre-ja {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 50px;
+    align-items: center;
 }
 
-.compre-ja .titulo{
+.compre-ja .titulo {
     font-family: 'ChaletComprime';
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 50px;
 }
 
+.compre-ja .cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    width: 50%;
+    border-radius: 10px;
+    padding: 80px;
+    gap: 40px;
+}
+
+.compre-ja .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.compre-ja .informacoes h3 {
+    font-family: 'ChaletComprime';
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.compre-ja .informacoes p {
+    color: #8e8e8e;
+    font-family: 'Chalet';
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.compre-ja .informacoes .plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.compre-ja .btn-plataformas .plataformas {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all .3 ease-in;
+    display: none;
+    opacity: 0;
+}
+
+.compre-ja .btn-plataformas .plataformas.ativo{
+    display: flex;
+    opacity: 1;
+}
+
+.compre-ja .btn-plataformas .plataformas li {
+    padding: 20px;
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(1) {
+    border: 1px solid #00439C;
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(1):hover {
+    background-color: #00439C;
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(2) {
+    border: 1px solid #387A26;
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(2):hover {
+    background-color: #387A26;
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(3) {
+    border: 1px solid #00439C;
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(3):hover {
+    background-color: #00439C;
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(4) {
+    border: 1px solid #387A26;
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(4):hover {
+    background-color: #387A26;
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(5) {
+    border: 1px solid #FCAF17;
+}
+
+.compre-ja .btn-plataformas .plataformas li:nth-child(5):hover {
+    background-color: #FCAF17;
+}
